@@ -19,7 +19,7 @@ svg_end() {
 }
 
 void
-show_histogram_svg(const std::vector<size_t>& bins) {
+show_histogram_svg(const std::vector<size_t>& bins, size_t dash, size_t space) {
     const auto IMAGE_WIDTH = 400;
     const auto IMAGE_HEIGHT = 300;
     const auto TEXT_LEFT = 20;
@@ -36,6 +36,8 @@ show_histogram_svg(const std::vector<size_t>& bins) {
         const double bin_width = (IMAGE_WIDTH-TEXT_WIDTH) / maxim * bins[i];
         svg_text(TEXT_LEFT, top + TEXT_BASELINE, std::to_string(bins[i]));
         svg_rect(TEXT_WIDTH, top, bin_width, BIN_HEIGHT, "black", colors[i]);
+        printf("<path x1='%d' y1='%d' x2='%d' y2='%d' stroke-dasharray='%d %d'></path>",
+                300, 400, 600, 700, dash, space);
         top += BIN_HEIGHT;
     }
     svg_end();

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1746144047 source:c:\users\user\desktop\lab01\histogram.cpp
+1746177804 source:c:\users\user\desktop\lab01\histogram.cpp
 	<vector>
 	<iostream>
 	<cstdio>
@@ -10,13 +10,13 @@
 	"histogram_internal.h"
 	<vector>
 
-1746144141 c:\users\user\desktop\lab01\histogram_internal.h
+1746177804 c:\users\user\desktop\lab01\histogram_internal.h
 	<vector>
 
 1746141099 c:\users\user\desktop\lab01\text.h
 	<vector>
 
-1746144631 source:c:\users\user\desktop\lab01\unittest.cpp
+1746178266 source:c:\users\user\desktop\lab01\unittest.cpp
 	"doctest.h"
 	"histogram_internal.h"
 

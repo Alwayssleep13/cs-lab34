@@ -36,6 +36,10 @@
 		<Unit filename="histogram.h" />
 		<Unit filename="histogram_internal.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="marks.txt" />
+		<Unit filename="svg.cpp" />
+		<Unit filename="svg.h" />
+		<Unit filename="text.cpp" />
 		<Unit filename="text.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

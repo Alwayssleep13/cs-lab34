@@ -8,8 +8,8 @@
 #include "histogram.h"
 const size_t MAX_ASTERISK = 80 - 3 - 1;
 
-void find_minmax(std::vector<double> numbers, double& min, double& max) {
-    if (numbers.size() == 0) return;
+bool find_minmax(std::vector<double> numbers, double& min, double& max) {
+    if (numbers.size() == 0) return false;
     min = numbers[0];
     max = numbers[0];
     for (double num : numbers) {
@@ -20,6 +20,7 @@ void find_minmax(std::vector<double> numbers, double& min, double& max) {
             max = num;
         }
     }
+    return true;
 }
 
 std::vector<size_t> make_histogram(std::vector<double>& numbers, size_t binCount, size_t countOfNumbers) {

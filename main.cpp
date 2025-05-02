@@ -35,8 +35,11 @@ int main()
 {
     vector<size_t> bins;
     Input in = input_data();
+
+    size_t dash, space;
+    std::cin >> dash >> space;
     bins = make_histogram(in.numbers, in.bin_count, in.numbers.size());
     //show_histogram(bins, in.bin_count);
-    show_histogram_svg(bins);
+    show_histogram_svg(bins, dash, space);
     return 0;
 }
